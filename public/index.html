@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<style>
+    div.row:nth-child(odd) {
+        background-color: rgba(0,0,0,.05);
+    }
+</style>
+
+<body class="text-center">
+<form id="login" class="form-signin" novalidate>
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputUsername" class="sr-only">Email address</label>
+    <input type="text" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="" autocomplete="off" style="background: white; background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" autocomplete="off" style="background: white; background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" value="remember-me"> Remember me
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+    <section>
+        <h2 class="h4 mt-5 font-weight-normal">Username</h2>
+        <ul class="text-left">
+            <li>Required</li>
+            <li>Max character length: 15</li>
+            <li>Min character length: 5</li>
+            <li>No special characters</li>
+            <li>No spaces</li>
+        </ul>
+        <h2 class="h4 font-weight-normal">Password</h2>
+        <ul class="text-left">
+            <li>Required</li>
+            <li>Max character length: 20</li>
+            <li>Min character length: 10</li>
+            <li>Must have at least 1 Uppercase</li>
+            <li>Must have at least 1 lowercase</li>
+            <li>Must have 1 digit</li>
+            <li>No special characters</li>
+            <li>No spaces</li>
+
+        </ul>
+    </section>
+</form>
+<script src="app.js"></script>
+</body>
+</html>
